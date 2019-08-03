@@ -1,7 +1,11 @@
 spring:
   application:
     name: zuul
-    
+  rabbitmq:
+    host: 192.168.190.138
+    port: 5672
+    username: admin
+    password: admin 
 server:
   port: 3001
   
@@ -20,7 +24,7 @@ zuul:
     
 ribbon:
   ConnectTimeout: 1000
-  ReadTimeout: 2000
+  ReadTimeout: 1000
   MaxAutoRetriesNextServer: 1
   MaxAutoRetries: 1
   
